@@ -1,0 +1,512 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a:link, a:visited{
+
+    color: aliceblue;
+    text-decoration: none;
+}
+
+/* cabeçalho do site */
+
+header{
+
+    width: 100%;
+    height: 200px;
+    /* background-color: aqua; */
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; */
+
+}
+
+/* conteudo do menu */
+#menu{
+
+    width: 100%;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    z-index: 999;
+    /* background-color: #454752; */
+    /* border-radius: 0 0 40px 40px; */
+
+}
+#menu figure{
+
+    width: 150px;
+    height: 150px;
+    margin-top: -55px;
+    /* background-color: #167419; */
+    background-image: url(../img/logo_pet_fun.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#menu ul{
+
+    width: 40%;
+    height: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    display: flex;
+    background-color: #454752;
+    border-radius: 20px 20px 20px 20px;
+}
+
+#menu ul li{
+
+    width: 25%;
+    height: inherit;
+    list-style: none;
+    font-size: 1.15em;
+    text-align: center;
+    padding-top: 23px;
+    font-weight: bold;
+    color: white;
+    transition: .2s;
+
+}
+
+#menu ul li:hover{
+
+    cursor: pointer;
+    color: rgb(18, 124, 185);
+    transform: scale(1.05);
+}
+
+#menu ul li a:hover{
+
+    color: rgb(18, 124, 185);
+    transform: scale(1.05);
+}
+
+/* .bloons{
+    width: 40%;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(240, 238, 238);
+    border-radius: 0px 0px 20px 20px;
+    border: 1px solid rgb(206, 204, 204);
+} */
+
+
+/* conteudo da main */
+
+main{
+
+    width: 100%;
+    min-height: 1200px;
+    height: auto;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* conteudo informacoes */
+
+
+#destaques{
+
+    width: 100%;
+    min-height: 550px;
+    height: auto;
+    background-color: #1eba8b;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-top: -10px;
+}
+
+
+
+#destaques h2{
+
+    width: 100%;
+    height: 60px;
+    padding-top: 20px;
+    padding-left: 10px;
+    font-size: 1.7em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+#destaques .card_dest{
+
+    width: 1200px;
+    min-height: 400px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    column-gap: 70px;
+    row-gap: 80px;
+
+   
+}
+
+#destaques .card-pet-dest{
+
+    width: 310px;
+    height: 310px;
+    /* background-color: #06b6de; */
+    box-shadow: 10px 10px 10px #ece5e5;
+    border-radius: 20px;
+    margin-top: 25px;
+    transition: .2s;
+
+}
+
+.card-pet-dest:hover{
+
+    cursor: pointer;
+    color:  #1eba8b;
+    transform: scale(1.03);
+
+}
+
+#destaques figure{
+    width: 80%;
+    height: 220px;
+    background-color: #bbc4c7;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.cachorro{
+    background-image: url(../img/husky.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.gato{
+    background-image: url(../img/gato-sorri.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hamster{
+    background-image: url(../img/hamster.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* conteudo ideais */
+
+#ideais{
+
+    width: 100%;
+    min-height: 470px;
+    height: auto;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -11px;
+    background-color:#406b85;
+}
+
+#ideais .text-ideais{
+
+    width: 1350px;
+    height: 300px;
+    /* background-color: #1eba8b; */
+    height: auto;
+    margin: auto;
+    padding: 20px;
+    font-size: 1.7em;
+    font-weight: bold;
+    text-align: justify;
+    letter-spacing: 2px;
+    line-height: 50px;
+    color: #000000;
+    margin-top: 40px;
+}
+
+#ideais p{
+    margin-bottom: 60px;
+}
+
+#ideais h2{
+
+    width: 100%;
+    height: 60px;
+    padding-top: 35px;
+    padding-left: 10px;
+    font-size: 1.7em;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+
+/* conteudo pets */
+
+#pets{
+
+    width: 1250px;
+    min-height: 1000px;
+    height: auto;
+    overflow: hidden;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    margin-top: 150px;
+    /* background-color: brown; */
+    border-radius: 20px;
+     
+}
+
+.titulo-pet{
+
+    width: 100%;
+    height: 60px;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 1.7em;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 20px;
+  
+}
+
+.pets{
+    width: inherit;
+    min-height: 600px;
+    height: auto;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding-top: 30px;
+    padding-left: 10px;
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    column-gap: 80px;
+    row-gap: 80px;
+    margin: 10px;
+
+}
+
+.card-pet{
+
+    background-color: rgb(255, 254, 254);
+    height: 420px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #ece5e5;
+    transition: .2s;
+    
+}
+
+.card-pet:hover{
+
+    cursor: pointer;
+    color: rgb(18, 124, 185);
+    transform: scale(1.03);
+
+}
+
+.card-pet h2{
+
+    width: 100%;
+    height: 50px;
+    /* background-color: aqua; */
+    text-align: center;
+    padding-top: 12px;
+}
+
+.card-pet .caixa-imagem{
+
+    width: 80%;
+    height: 250px;
+    background-color: azure;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.caixa-imagem img{
+
+    width: 100%;
+    height: inherit;
+    margin: auto;
+}
+
+
+.card-pet .cor, .raca, .origem{
+    width: 90%;
+    height: 40px;
+    /* background-color: aqua; */
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
+}
+
+
+/* conteudo contatos */
+
+#contato{
+
+    width: 100%;
+    min-height: 470px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-bottom: 30px; */
+    /* border-radius: 20px; */
+    /* background-color: rgb(80, 61, 61); */
+    background-color: #454752;
+    margin-top: -9px;
+}
+
+#contato h2{
+
+    width: 100%;
+    height: 60px;
+    padding-top: 20px;
+    padding-left: 10px;
+    font-size: 1.7em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+
+#principal{
+    width: 500px;
+    height: 350px;
+    background-color:#ffffff;
+    margin: auto;
+    border-radius: 30px;
+    padding-top: 30px;
+
+}
+
+.botão{
+    width: 200px;
+    height: 30px;
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: none;
+    font-size: 0.7em; 
+    font-weight: bold; 
+    text-align: center;
+    line-height: 30px; 
+    cursor: pointer;
+    background-color: rgb(20, 20, 19);
+}
+
+#principal h1{
+    padding-top: 20px;
+    width: inherit;
+    height: 80px;
+    text-align: center;
+    background-color:#023b4c;
+    color: #ffffff;
+    font-family: Verdana;
+}
+
+form{
+    width: 90%;
+    margin: auto;
+}
+
+
+#principal label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 50px;
+    height: 20px;
+    display: block;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+#principal input, textarea{
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    border: solid 1px #c1c1c1;
+    margin-bottom: 10px;
+}
+
+#principal input[name="txt_price"]{
+    width: 30%;
+}
+
+#mensagem {
+    height: 100px;
+    resize: none;
+}
+
+#salvar{
+
+    margin-top: 10px;;
+    padding-top: 10px;
+    display: block;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color: #00aa06;
+    text-align: center;
+    font-size: 1.1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#salvar:hover{
+    background-color: #06b6de;
+    color: #080808;
+    cursor: pointer;
+}
+
+/* rodape do site */
+
+footer{
+
+    width: 100%;
+    height: 80px;
+    margin-top: 100px;
+    background-color: rgb(34, 32, 32);
+}
+
+.direitos{
+    width: 50%;
+    height: 50px;
+    /* background-color: #06b6de; */
+    text-align: center;
+    margin: auto;
+    padding-top: 30px;
+    color: #ffffff;
+}
